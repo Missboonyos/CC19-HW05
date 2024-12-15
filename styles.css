@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #f9f9f9;    
+}
+
+nav {
+    /* background-color: rgb(220, 243, 174); */
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.1px solid rgb(232, 231, 231);
+}
+
+nav :hover {
+    color: #1dc6b0;
+}
+
+.nav-JobPasscard {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 0;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+}
+
+.nav-profile {
+    font-weight: bolder;
+    color: black;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* background: #000;                    */
+}
+
+.nav-search-cart-log-sign {
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    gap: 20px;
+}
+
+.nav-search {
+    font-size: 2vw;
+    color: rgb(159, 165, 172);
+}
+
+.fa-cart-shopping {
+    font-size: 2vw;
+    color: rgb(159, 165, 172);
+}
+
+.nav-shopping-cart {
+    color: lightslategray;
+    position: relative;
+    right: 10px;
+}
+
+.cartcount {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.nav-login-signup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+.my-cart {    
+    margin-left: 240px;
+    padding-top: 50px; 
+    font-weight: bolder;   
+}
+
+.google-docs {
+    display: flex;
+    margin-top: 10px;
+    margin-inline: 100px;
+    justify-content: space-around;
+}
+
+.google-docs-left {
+    display: flex;
+    width: 40%;
+    height: 400px;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 120px;
+}
+
+.gg-docs {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.gg-docs .gg-docs-trash {
+    display: flex;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #66cdec;
+    border-radius: 50%;
+}
+
+.google-docs .google-docs-mid {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(84, 158, 248);
+    border-radius: 20px;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+}
+
+.google-docs-mid i, h5, p {
+    padding: 8px;
+}
+
+.google-docs-mid i {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-docs-mid p {
+    font-size: 12px;
+    color: whitesmokey;
+}
+
+.google-docs-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.google-docs-right h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-right: 50px;
+}
+
+.circle {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.dropdown-menu li.selected {
+    font-weight: bold;
+}
+
+.dropdown-lv {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px slategrey;
+    z-index: 1;
+}
+
+.dropdown-lv a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+  
+.dropdown-lv a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-lv {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    border: 1.5px solid #63E6BE;
+}
+
+.google-docs-right button {
+    width: 100px;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.google-slides {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.google-slides .google-slides-left {
+    display: flex;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #66cdec;
+    border-radius: 50%;
+}
+
+.google-slides .google-slides-mid {
+    display: flex;
+    width: 145px;
+    height: 145px;
+    background-color: rgb(244, 149, 17);
+    border-radius: 20px;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+}
+
+.google-slides-mid i, h5, p {
+    padding: 8px;
+}
+
+.google-slides-mid i {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-slides-mid p {
+    font-size: 12px;
+    color: whitesmokey;
+}
+
+.google-slides-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.google-slides-right h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-right: 50px;
+}
+
+.google-slides-right button {
+    width: 100px;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: fit-content;
+    background-color: #ffffff;
+    border-radius: 18px;
+    border: 0.1px solid lightgrey;
+}
+
+.order-info h2 {
+    margin: 25px 20px 20px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.order-summary {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px 0px 20px; 
+}
+
+.promo-code {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 0.1px solid rgb(232, 231, 231);
+}
+
+.promo-code i, input, button {
+    margin: 18px;
+    padding: 20px;
+}
+.promo-code input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.promo-code button {
+    padding: 8px 15px;
+    margin-left: 5px;
+    background-color: white;
+    color: #00cfcf;    
+    border: none;
+    border-radius: 8px;
+    border: 2px solid #00cfcf;
+    cursor: pointer;
+}
+
+.total-payment {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00cfcf;
+    display: flex;
+    height: 50%;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-payment h5 {
+    font-size: 15px;
+    color:slategrey;
+}
+
+.checkout-btn {
+    background-color: #00cfcf;
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 92%;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.checkout-btn:hover {
+    background-color: #00a8a8;
+}

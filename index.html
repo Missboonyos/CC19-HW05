@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW05 : Shopping Cart - JobPasscard Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css" </head>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-JobPasscard">
+            <a href="index.html">
+                <img src="https://jobpasscard.com/static/images/footer-logo.png" alt="JobPasscard"></a>
+        </div>
+
+        <div class="nav-profile" ;">
+            <a href="#">ABOUT US</a>
+            <a href="#">PASSCARD</a>
+            <a href="#">PROFILE</a>
+        </div>
+
+        <div class="nav-search-cart-log-sign">
+            <div class="nav-search">
+                <i class="fas fa-magnifying-glass"></i>
+            </div> <br>
+            <div class="nav-shopping-cart">
+                <i class="fas fa-cart-shopping"></i>
+                <div class="cartcount">
+                    1
+                </div>
+            </div>
+            <div class="nav-login-signup">
+                <a href="#">LOGIN</a>
+                <a href="#">SIGN UP</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="my-cart">
+        <h1>My Cart</h1> <br>
+    </div>
+    <div class="google-docs">
+        <div class="google-docs-left">
+            <div class="gg-docs">
+                <div class="gg-docs-trash">
+                    <i class="fas fa-trash" style="color: #00cfcf;"></i>
+                </div>
+                <div class="google-docs-mid">
+                    <i class="fas fa-file-lines" style="color: rgb(84, 158, 248);"></i>
+                    <h5>Google Docs</h5>
+                    <p>Used for business</p>
+                </div>
+                <div class="google-docs-right">
+                    <h3>Google Docs</h3>
+                    <div class="circle">
+                        <i class="fas fa-circle" style="color: #00cfcf;"></i>
+                        <i class="fas fa-circle" style="color: #ecf6f6;"></i>
+                        <i class="fas fa-circle" style="color: #ecf6f6;"></i>
+                        <div class="dropdown">
+                            <button class="dropbtn" style="color: grey; font-weight: bold;">LV 1-3 <i
+                                    class="fas fa-angle-up"></i></button>
+                            <div class="dropdown-lv" style="font-weight: bold" ;>
+                                <a href="#">LV 1-3</a>
+                                <a href="#" class="selected">LV 2-3 
+                                    <span class="checkmark" style="color: #00cfcf;">&#10003;</span></a>
+                                <a href="#">LV 3-3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>THB 150</h4>
+                </div>
+            </div>
+
+            <div class="google-slides">
+                <div class="google-slides-left">
+                    <i class="fas fa-trash" style="color: #00cfcf;"></i>
+                </div>
+                <div class="google-slides-mid">
+                    <i class="fas fa-file-lines" style="color: rgb(240, 143, 7)"></i>
+                    <h5>Google Slides</h5>
+                    <p>Used for business</p>
+                </div>
+                <div class="google-slides-right">
+                    <h3>Google Slides</h3>
+                    <div class="circle">
+                        <i class="fas fa-circle" style="color: #00cfcf;"></i>
+                        <i class="fas fa-circle" style="color: #00cfcf;"></i>
+                        <i class="fas fa-circle" style="color: #00cfcf;"></i>
+                        <i class="fas fa-circle" style="color: #ecf6f6;"></i>
+                        <div class="dropdown">
+                            <button class="dropbtn" style="color: grey; font-weight: bold;">LV 3-4 <i
+                                    class="fas fa-angle-down"></i></button>
+                            <div class="dropdown-lv" style="font-weight: bold;">
+                                <a href="#">LV 1-4</a>
+                                <a href="#">LV 2-4</a>
+                                <a href="#">LV 3-4</a>
+                                <a href="#">LV 4-4</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>THB 150</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-info">
+            <h2>Order Info</h2> <br>
+
+            <div class="order-summary" style="color: gray; font-weight: 500;">
+                <span>Subtotal</span>
+                <span>THB 300</span>
+            </div>
+
+            <div class="promo-code">
+                <i class="fas fa-ticket-simple" , style="color: #00cfcf;"></i>
+                <input type="text" placeholder="Promotion code">
+                <button style="color: #00cfcf; font-weight: bold;">APPLY</button>
+            </div>
+
+            <div class="total-payment">
+                <h5>Total payment</h5>
+                <p>THB 300</p>
+            </div>
+
+            <button class="checkout-btn" style="color: black; font-weight: bold;">LOG IN TO CHECKOUT</button>
+        </div>
+    </div>
+</body>
+
+</html>
